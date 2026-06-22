@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: jvm-arthas-demo
+
+# 启动时加上 JVM 参数便于复现 OOM：
+# -Xms128m -Xmx256m -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m
+# -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./dump.hprof
+# -verbose:gc -XX:+PrintGCDetails
